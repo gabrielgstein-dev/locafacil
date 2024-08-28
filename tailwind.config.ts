@@ -1,8 +1,16 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      keyframes: {
+        scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100% ': { transform: 'translateX(calc(-320px * 7))' },
+        },
+      },
+      animation: {
+        scroll: 'scroll 40s infinite linear',
+      },
       colors: {
         primary: {
           DEFAULT: '#FE5F07',

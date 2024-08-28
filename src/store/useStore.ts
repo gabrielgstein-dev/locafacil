@@ -1,7 +1,7 @@
+import { fetchCategories } from '@api/category.service';
+import { type Category, type CategoryOption } from '@interfaces/category';
 import { create } from 'zustand';
 import { devtools } from 'zustand/middleware';
-import { fetchCategories } from '@api/category.service';
-import { Category, CategoryOption } from '@interfaces/category';
 
 interface StoreState {
   categories: Category[];

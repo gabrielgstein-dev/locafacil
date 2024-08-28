@@ -1,9 +1,9 @@
 // app/home/components/TitleSection.component.tsx
+
 import { Work_Sans } from '@next/font/google';
 import Image from 'next/image';
-import SearchSection from './SearchSection';
-import { Container } from '@components/Container.component';
 import { Button } from 'src/components/ui/Button';
+import SearchSection from './SearchSection';
 
 const workSans = Work_Sans({
   subsets: ['latin'],
@@ -23,11 +23,11 @@ export const TitleSection = () => {
         priority
         className="z-[-1]"
       />
-      <Container className="flex justify-between items-center w-full">
+      <div className="container mx-auto flex w-full items-center justify-between px-8">
         <div className="pt-16">
-          <h1 className="text-base text-white pb-6">Bem-vindo à Loca Fácil!</h1>
+          <h1 className="pb-6 text-base text-white">Bem-vindo à Loca Fácil!</h1>
           <h2
-            className={`pb-9 font-bold text-big-title text-white ${workSans.className}`}
+            className={`pb-9 text-big-title font-bold text-white ${workSans.className}`}
           >
             Aluguel de Máquinas
           </h2>
@@ -53,7 +53,7 @@ export const TitleSection = () => {
             </Button>
           </div>
         </div>
-        <div className="h-[651px] w-full relative">
+        <div className="relative h-[651px] w-full">
           <Image
             src="/bulldozer-amarelo.png"
             alt="Escavadeira Amarela CAT Aluguel de Máquinas Pesadas"
@@ -63,11 +63,11 @@ export const TitleSection = () => {
             priority
           />
         </div>
-      </Container>
+      </div>
 
-      <Container as="section" customPadding className="px-40 mt-[44px]">
+      <section className="mt-[44px] px-8">
         <SearchSection />
-      </Container>
+      </section>
     </section>
   );
 };

@@ -1,12 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Container } from './Container.component';
 
 // app/components/Footer.tsx
 export default function Footer() {
   return (
     <footer className="relative border-t bg-[#131313] text-white">
-      <Container className="h-[564px] pt-[74px] flex justify-between">
+      <div className="container mx-auto flex h-[564px] justify-between pt-[74px]">
         <div className="w-[330px]">
           <div className="flex">
             <Link href="/" aria-label="Loca Fácil - Página Inicial">
@@ -28,7 +27,7 @@ export default function Footer() {
 
         <div className="flex w-7/12">
           <div className="w-7/12">
-            <p className="pb-[55px] text-primary font-semibold text-3xl">
+            <p className="pb-[55px] text-3xl font-semibold text-primary">
               Quicklink
             </p>
             <ul>
@@ -61,7 +60,7 @@ export default function Footer() {
           </div>
 
           <div className="w-7/12">
-            <p className="pb-[55px] text-primary font-semibold text-3xl">
+            <p className="pb-[55px] text-3xl font-semibold text-primary">
               Services
             </p>
             <ul>
@@ -88,9 +87,9 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-      </Container>
+      </div>
 
-      <div className="absolute bottom-0 border-t w-full text-center pt-7 pb-10 border-[#636363]">
+      <div className="absolute bottom-0 w-full border-t border-[#636363] pb-10 pt-7 text-center">
         <p className="text-[#636363]">
           Todos os direitos reservados. Desenvolvido por i9ty.com
         </p>

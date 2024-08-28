@@ -1,13 +1,11 @@
 // app/home/components/TitleSection.component.tsx
-import { Work_Sans } from '@next/font/google';
 import { BrazilMap } from '@components/BrazilMap.component';
-import { Container } from '@components/Container.component';
 import { SectionHeader } from '@components/SectionHeader.component';
 import { StateList } from '@components/StateList.component';
 
 export const MapScreenSection = () => {
   return (
-    <Container as="section" className="pt-40 h-[952px]">
+    <section className="pb-20 pt-40">
       <SectionHeader title="Pesquisar por estado" subtitle="ESCOLHA A REGIÃO" />
 
       <section className="flex justify-center">
@@ -18,6 +16,6 @@ export const MapScreenSection = () => {
           <StateList />
         </div>
       </section>
-    </Container>
+    </section>
   );
 };

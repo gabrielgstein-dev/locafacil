@@ -1,9 +1,8 @@
 import './globals.css';
-import { Roboto } from '@next/font/google';
-import { ReactNode } from 'react';
 import CenterLayout from '@components/CenterLayout.component';
-import withPageTracking from '@components/PageTracking.hoc';
 import PageTracking from '@components/PageTracking.hoc';
+import { Roboto } from '@next/font/google';
+import { type PropsWithChildren } from 'react';
 import Footer from 'src/components/Footer.component';
 import Header from 'src/components/Header.component';
 
@@ -13,11 +12,7 @@ const roboto = Roboto({
   display: 'swap',
 });
 
-interface RootLayoutProps {
-  children: ReactNode;
-}
-
-const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
+const RootLayout = ({ children }: PropsWithChildren) => {
   return (
     <html lang="pt-BR" className={roboto.className}>
       <head>

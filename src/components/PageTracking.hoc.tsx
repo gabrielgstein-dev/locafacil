@@ -1,12 +1,8 @@
 'use client';
 import { usePathname } from 'next/navigation';
-import { useEffect, ReactNode } from 'react';
+import { type PropsWithChildren, useEffect } from 'react';
 
-interface PageTrackingProps {
-  children: ReactNode;
-}
-
-const PageTracking: React.FC<PageTrackingProps> = ({ children }) => {
+const PageTracking = ({ children }: PropsWithChildren) => {
   const pathname = usePathname();
 
   useEffect(() => {

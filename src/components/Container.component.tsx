@@ -1,4 +1,4 @@
-import { ReactNode, ElementType } from 'react';
+import { type ReactNode, type ElementType } from 'react';
 
 interface ContainerProps {
   children: ReactNode;

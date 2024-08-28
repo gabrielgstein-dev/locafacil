@@ -1,8 +1,8 @@
 'use client';
-import Link from 'next/link';
-import React from 'react';
 import { BrazilStateMap } from '@interfaces/BrazilStates';
 import { useMapStore } from '@store/map.store';
+import Link from 'next/link';
+import React from 'react';
 
 const stateFirstColumn = [
   'Acre',
@@ -55,14 +55,14 @@ export const StateList = () => {
     <section className="flex justify-between">
       <ul className="list-none pl-16">
         {stateFirstColumn.map((state) => (
-          <li key={state} className="relative pl-4 py-1">
+          <li key={state} className="relative py-1 pl-4">
             <Link
               href="#"
-              className="text-2xl hover:text-primary hover:font-semibold flex align-middle"
+              className="flex align-middle text-2xl hover:font-semibold hover:text-primary"
               onMouseEnter={() => handleMouseEnter(state)}
               onMouseLeave={handleMouseLeave}
             >
-              <span className="text-gray-default font-bold" aria-hidden="true">
+              <span className="font-bold text-gray-default" aria-hidden="true">
                 •
               </span>
               <p className="pl-4">{state}</p>
@@ -72,14 +72,14 @@ export const StateList = () => {
       </ul>
       <ul className="list-none pl-16">
         {stateSecondColumn.map((state) => (
-          <li key={state} className="relative pl-4 py-1">
+          <li key={state} className="relative py-1 pl-4">
             <Link
               href="#"
-              className="text-2xl hover:text-primary hover:font-semibold flex align-middle"
+              className="flex align-middle text-2xl hover:font-semibold hover:text-primary"
               onMouseEnter={() => handleMouseEnter(state)}
               onMouseLeave={handleMouseLeave}
             >
-              <span className="text-gray-default font-bold" aria-hidden="true">
+              <span className="font-bold text-gray-default" aria-hidden="true">
                 •
               </span>
               <p className="pl-4">{state}</p>

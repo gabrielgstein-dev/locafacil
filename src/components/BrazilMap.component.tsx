@@ -1,6 +1,6 @@
 'use client';
-import { BrazilSvgMap } from './ui/BrazilSvgMap.ui';
 import { useMapStore } from '@store/map.store';
+import { BrazilSvgMap } from './ui/BrazilSvgMap.ui';
 
 export const BrazilMap = () => {
   const { highlightedState } = useMapStore();

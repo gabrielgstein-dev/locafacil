@@ -1,5 +1,5 @@
 // src/api/categoryService.ts
-import { Category } from '../interfaces/category';
+import { type Category } from '../interfaces/category';
 
 export const fetchCategories = async (): Promise<Category[]> => {
   try {

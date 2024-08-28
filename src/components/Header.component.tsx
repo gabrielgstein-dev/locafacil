@@ -1,12 +1,11 @@
+import { Button } from '@ui/Button';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Container } from './Container.component';
-import { Button } from '@ui/Button';
 
 export default function Header() {
   return (
     <header className="bg-white shadow-md">
-      <Container className="flex justify-between items-center py-8">
+      <div className="container mx-auto flex items-center justify-between p-8">
         <div>
           <Link href="/" aria-label="Loca Fácil - Página Inicial">
             <Image
@@ -76,7 +75,7 @@ export default function Header() {
             </Button>
           </Link>
         </div>
-      </Container>
+      </div>
     </header>
   );
 }

@@ -2,6 +2,7 @@
 
 import { MachineTypeSection } from './components/MachineTypeSection.component';
 import { MapScreenSection } from './components/MapSection.component';
+import { Slider } from './components/Slider';
 import { TitleSection } from './components/TitleSection.component';
 
 export default function HomePage() {
@@ -10,6 +11,7 @@ export default function HomePage() {
       <TitleSection />
       <MapScreenSection />
       <MachineTypeSection />
+      <Slider />
     </div>
   );
 }

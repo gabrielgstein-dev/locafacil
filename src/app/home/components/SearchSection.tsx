@@ -14,34 +14,34 @@ export default function SearchSection() {
   ];
 
   return (
-    <form className="w-full bg-primary pt-12 pb-14 px-9 rounded-4xl">
-      <fieldset className="flex justify-between items-end">
+    <form className="container mx-auto w-full rounded-4xl bg-primary px-12 pb-14 pt-12">
+      <fieldset className="flex items-end justify-between gap-7">
         <Select
           label="Estado"
           name="estado"
           options={categoryOptions}
-          className="max-w-xs w-72"
+          className="w-full max-w-xs"
         />
 
         <Select
           label="Categorias"
           name="categories"
           options={categoryOptions}
-          className="max-w-xs w-full"
+          className="w-full max-w-xs"
         />
 
         <Select
           label="Estado"
           name="estado"
           options={categoryOptions}
-          className="max-w-xs w-full"
+          className="w-full max-w-xs"
         />
 
         <Select
           label="Estado"
           name="estado"
           options={categoryOptions}
-          className="max-w-xs w-full"
+          className="w-full max-w-xs"
         />
 
         <Button variant="secondary" size="large">
